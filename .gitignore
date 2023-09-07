@@ -1,0 +1,3 @@
+megalinter-reports/
+.ruff_cache
+api.txt
