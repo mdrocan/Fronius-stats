@@ -4,6 +4,7 @@ Simple Python script that fetches data from a predefined Fronius inverter.
 Displays: timestamp, current production and how much has been produced during the (day, year) so far.
 
 ## Script execution
+Install the required package with 'pip install -r requirements.txt'
 Execute in the terminal with the following command: 'python3 fronius.py'
 After script execution the data is fetched from the inverter and trimmed.
 
