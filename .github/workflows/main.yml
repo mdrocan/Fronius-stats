@@ -27,5 +27,5 @@ jobs:
         uses: oxsecurity/megalinter/flavors/python@beta
         env:
           VALIDATE_ALL_CODEBASE: true
-          DEFAULT_BRANCH: master
+          DEFAULT_BRANCH: main
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
