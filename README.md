@@ -11,7 +11,7 @@
 
 ## Architecture
 
-By default it fetches the URL being used froma file called 'api.txt'.
+By default the script uses the URL defined in a file called 'api.txt'.
 
 There's also a possibility to use a example response message in a Docker environment:
 - You must edit the Python source and comment/uncomment the necessary lines in the script.
