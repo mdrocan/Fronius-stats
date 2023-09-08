@@ -6,7 +6,7 @@
 ## Script execution
 
 - Install the required package with 'pip install -r requirements.txt'
-- Execute in the terminal with the following command: 'python3 fronius.py'
+- Execute in the terminal with the following command: 'python fronius.py'
 - After script execution the data is fetched from the inverter and trimmed.
 
 ## Architecture
@@ -20,5 +20,5 @@ There's also a possibility to use a example response message in a Docker environ
 
 ## Next steps
 
-Save data to a database.
-Visualize the data.
+- Save the data to a database.
+- Visualize the data.
