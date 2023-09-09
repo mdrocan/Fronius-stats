@@ -5,9 +5,11 @@
 
 ## Script execution
 
+- Create a virtual environment with 'python3 -m venv test_env'
+- Activate the environment with 'source test_env/bin/activate'
 - Install the required package with 'pip install -r requirements.txt'
-- Execute in the terminal with the following command: 'python fronius.py'
-- After script execution the data is fetched from the inverter and trimmed.
+- Execute in the terminal with the following command: 'python3 fronius.py'
+- After script execution the data is fetched from the inverter and trimmed as output.
 
 ## Architecture
 
