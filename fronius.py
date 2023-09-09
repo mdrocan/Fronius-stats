@@ -31,7 +31,9 @@ def check_values():
         year = numerize.numerize(jsondata["Body"]["Data"]["Site"]["E_Year"], 2)
         print("Year:", year, "Wh")
 
-        total_produce = numerize.numerize(jsondata["Body"]["Data"]["Site"]["E_Total"], 2) # noqa: E501
+        total_produce = numerize.numerize(
+            jsondata["Body"]["Data"]["Site"]["E_Total"], 2
+        )  # noqa: E501
         print("Total:", total_produce, "Wh")
 
     except HTTPError as http_err:
