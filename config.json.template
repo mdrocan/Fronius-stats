@@ -1,0 +1,6 @@
+{
+  "fronius": {
+    "url": "http://xxx.xxx.xxx.xxx/solar_api/v1/GetPowerFlowRealtimeData.fcgi",
+    "max_capacity": "xxxx"
+  }
+}

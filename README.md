@@ -14,12 +14,15 @@
 
 ## Architecture
 
-By default the script uses the URL defined in a file called 'api.txt'.
+By default the script uses a config file 'config.json', a template is [here](config.json.templete).
+Currently there are two settings to be defined: URL and maximum capacity.
 
 There's also a possibility to use a example response message in a Docker environment:
-- You must edit the Python source and comment/uncomment the necessary lines in the script.
-- The Docker setup can be found from [here](web_server).
+
+- The Dockerfile can be found from [here](web_server).
 - Example message message [here](web_server/GetPowerFlowRealtimeData.fcgi).
+- If you use the Docker environment the URL must be defined like your Docker environment has been
+started up. For example: '<http://localhost:8080/GetPowerFlowRealtimeData.fcgi>'.
 
 ## Next steps
 

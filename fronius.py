@@ -1,14 +1,16 @@
 """
 Importing data from the Fronius device.
 """
+import json  # pylint: disable=import-error
 import requests  # pylint: disable=import-error
 from requests.exceptions import HTTPError  # pylint: disable=import-error
 from numerize import numerize  # pylint: disable=import-error
 
-with open("api.txt", "r", encoding="utf8") as file:
-    URL = file.read().rstrip()
+with open("config.json", "r", encoding="utf8") as config_file:
+    config = json.load(config_file)
 
-# URL = "http://localhost:8080/GetPowerFlowRealtimeData.fcgi"
+URL = config["fronius"]["url"]
+MAX_C = config["fronius"]["max_capacity"]
 
 
 def check_values():
@@ -22,8 +24,14 @@ def check_values():
 
         print("Timestamp:", jsondata["Head"]["Timestamp"])
 
-        currently = numerize.numerize(jsondata["Body"]["Data"]["Site"]["P_PV"], 2)
-        print("Currently:", currently, "Wh")
+        currently = jsondata["Body"]["Data"]["Site"]["P_PV"]
+        if currently is None:
+            currently = 0
+            print("Currently:", currently, "W")
+            print("From max capacity:", "0%")
+        else:
+            percentage = currently / MAX_C * 100
+            print("From max capacity:", round(percentage, 1), "%")
 
         today = numerize.numerize(jsondata["Body"]["Data"]["Site"]["E_Day"], 2)
         print("Today:", today, "Wh")
