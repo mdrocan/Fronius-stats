@@ -14,7 +14,7 @@
 
 ## Architecture
 
-By default the script uses a config file 'config.json', a template is [here](config.json.templete).
+By default the script uses a config file 'config.json', a template is [here](config.json.template).
 Currently there are two settings to be defined: URL and maximum capacity.
 
 There's also a possibility to use a example response message in a Docker environment:
