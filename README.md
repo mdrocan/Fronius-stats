@@ -10,6 +10,7 @@
 - Install the required package with 'pip install -r requirements.txt'
 - Execute in the terminal with the following command: 'python3 fronius.py'
 - After script execution the data is fetched from the inverter and trimmed as output.
+- If you don't wish to keep the virtual environment then deactivate it with 'deactivate'.
 
 ## Architecture
 
