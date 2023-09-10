@@ -2,3 +2,4 @@ megalinter-reports/
 .ruff_cache
 config.json
 test_env
+data.json
