@@ -10,7 +10,4 @@ ENABLE_LINTERS:
   - PYTHON_FLAKE8
   - DOCKERFILE_HADOLINT
 PRE_COMMANDS:
-  - command: pip install requests
-    venv: requests
-  - command: pip install influxdb-client[ciso]
-    venv: influx-client
+  - command: pip install -r requirements.txt
