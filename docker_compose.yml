@@ -1,0 +1,35 @@
+---
+networks:
+  testnet:
+    driver: bridge
+
+services:
+  influxdb:
+    image: influxdb:2.7.1-alpine
+    container_name: influxdb
+    volumes:
+      - ./influxdb_volume/:/var/lib/influxdb/:rw
+    ports:
+      - "8083:8083"
+      - "8086:8086"
+    expose:
+      - "8090"
+      - "8099"
+    environment:
+      PRE_CREATE_DB: testdb
+    security_opt:
+      - no-new-privileges:true
+    restart: unless-stopped
+    networks:
+      - testnet
+
+  grafana:
+    image: grafana/grafana-oss:10.1.1
+    container_name: grafana
+    restart: unless-stopped
+    ports:
+      - "3000:3000"
+    volumes:
+      - ./grafana_volume/:/var/lib/grafana/:rw
+    networks:
+      - testnet
