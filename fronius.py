@@ -4,9 +4,7 @@ Import data from the Fronius inverter and write the data into InfluxDB.
 import json  # pylint: disable=import-error
 import time  # pylint: disable=import-error
 import requests  # pylint: disable=import-error
-from influxdb_client import (
-    InfluxDBClient,
-)  # pylint: disable=import-error
+from influxdb_client import InfluxDBClient # pylint: disable=import-error
 from influxdb_client.client.write_api import SYNCHRONOUS  # pylint: disable=import-error
 from requests.exceptions import HTTPError  # pylint: disable=import-error
 
