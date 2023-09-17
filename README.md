@@ -24,6 +24,10 @@ There's also a possibility to use a example response message in a Docker environ
 - If you use the Docker environment the URL must be defined like your Docker environment has been
 started up. For example: '<http://localhost:8080/GetPowerFlowRealtimeData.fcgi>'.
 
+## Development
+Development activities happen mainly in the development-branch.
+The idea is to keep that branch active and also as a latest ~working solution.
+
 ## Next steps
 
 - Save the data to a database.
