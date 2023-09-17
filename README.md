@@ -17,7 +17,7 @@
 
 - Create a data source connection to InfluxDB.
 - Choose Flux as the query language.
-- Setup the http-connection as 'http://influxdb:8086'.
+- Setup the http-connection as "http://influxdb:8086".
 - Setup to InfuxDB Details section: organization, Token and Default Bucket.
 - Save and Test.
 - You should have now a working connection to your InfluxDB and can start making visualizations.
