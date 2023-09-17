@@ -2,5 +2,16 @@
   "fronius": {
     "url": "http://xxx.xxx.xxx.xxx/solar_api/v1/GetPowerFlowRealtimeData.fcgi",
     "max_capacity": "xxxx"
+  },
+  "influxdb": {
+    "url": "http://localhost:8086",
+    "token": "xxxxx",
+    "org": "yyyyy",
+    "bucket": "zzzzz",
+    "active": "true",
+    "timeout": "6000",
+    "connection_pool_size": "25",
+    "auth_basic": "false",
+    "profilers": "query, operator"
   }
 }

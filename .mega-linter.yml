@@ -9,7 +9,5 @@ ENABLE_LINTERS:
   - PYTHON_BLACK
   - PYTHON_FLAKE8
   - DOCKERFILE_HADOLINT
-ANSIBLE_DIRECTORY: .
 PRE_COMMANDS:
-  - command: pip install requests
-    venv: requests
+  - command: pip install -r requirements.txt
