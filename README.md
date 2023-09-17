@@ -49,7 +49,7 @@ There's also a possibility to use a example response message in a Docker environ
   started up. For example: '<http://localhost:8080/GetPowerFlowRealtimeData.fcgi>'.
 
 ## Development
-Development activities happen mainly in the development-branch.
+Development activities happen mainly in the development ( <https://github.com/mdrocan/Fronius-stats/tree/development> ) branch.
 The idea is to keep that branch active and also as a latest ~working solution.
 
 ## Next steps
