@@ -39,14 +39,16 @@
 ## Architecture
 
 By default the script uses a config file 'config.json', a template is [here](config.json.template).
-Currently there are two settings to be defined: URL and maximum capacity.
+
+Currently there are two configurations you need to define in the Fronius part: URL and maximum capacity.
+For the InfluxDB part you need to define: token, bucket and organization.
 
 There's also a possibility to use a example response message in a Docker environment:
 
 - The Dockerfile can be found from [here](web_server).
 - Example message message [here](web_server/GetPowerFlowRealtimeData.fcgi).
 - If you use the Docker environment the URL must be defined like your Docker environment has been
-  started up. For example: `http://localhost:8080/GetPowerFlowRealtimeData.fcgi>`.
+  started up. For example: `http://localhost:8080/GetPowerFlowRealtimeData.fcgi`.
 
 ## Development
 Development activities happen mainly in the [development] (https://github.com/mdrocan/Fronius-stats/tree/development) branch.
