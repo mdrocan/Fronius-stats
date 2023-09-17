@@ -17,14 +17,14 @@
 
 - Create a data source connection to InfluxDB.
 - Choose Flux as the query language.
-- Setup the http-connection as "http://influxdb:8086".
+- Setup the http-connection: "http://influxdb:8086".
 - Setup to InfuxDB Details section: organization, Token and Default Bucket.
 - Save and Test.
 - You should have now a working connection to your InfluxDB and can start making visualizations.
 
 ### Configuration settings
-
-- Update the config.json file with the relevant information from InfluxDB setup, ie. token, org and bucket.
+- By default the script uses a config file 'config.json', a template is [here](config.json.template).
+- Update config.json file with the relevant information from InfluxDB setup, ie. token, org and bucket.
 
 ## Script execution
 
