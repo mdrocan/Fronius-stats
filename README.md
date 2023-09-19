@@ -1,9 +1,9 @@
-[![MegaLinter](https://github.com/mdrocan/Fronius-stats/workflows/Linting/badge.svg?branch=main)](https://github.com/mdrocan/Fronius-stats/actions?query=workflow%3ALinting+branch%3Amain)
-
 # Fronius-stats
 
-- Simple Python script that fetches data from a predefined Fronius inverter.
-- Displays: timestamp, current production and how much has been produced during the (day, year) so far.
+[![MegaLinter](https://github.com/mdrocan/Fronius-stats/workflows/Linting/badge.svg?branch=main)](https://github.com/mdrocan/Fronius-stats/actions?query=workflow%3ALinting+branch%3Amain)
+
+- Simple Python script that fetches data from a predefined Fronius inverter and visualizes the production.
+- Displays: timestamp, current production and how much has been produced during the (day, year and total production) so far.
 
 ## Configure environment
 
@@ -53,7 +53,7 @@ There's also a possibility to use a example response message in a Docker environ
   started up. For example: `http://localhost:8080/GetPowerFlowRealtimeData.fcgi`.
 
 ## Development
-Development activities happen mainly in the [development] (https://github.com/mdrocan/Fronius-stats/tree/development) branch.
+Development activities happen mainly in the [development](https://github.com/mdrocan/Fronius-stats/tree/development) branch.
 The idea is to keep that branch active and also as a latest ~working solution.
 
 ## Next steps
