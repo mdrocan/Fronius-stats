@@ -1,4 +1,4 @@
-[![MegaLinter](https://github.com/mdrocan/Fronius-stats/workflows/Linting/badge.svg?branch=master)](https://github.com/mdrocan/Fronius-stats/actions?query=workflow%3ALinting+branch%3Amaster)
+[![MegaLinter](https://github.com/mdrocan/Fronius-stats/workflows/Linting/badge.svg?branch=main)](https://github.com/mdrocan/Fronius-stats/actions?query=workflow%3ALinting+branch%3Amain)
 
 # Fronius-stats
 
