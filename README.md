@@ -8,7 +8,7 @@
 ## Configure environment
 
 - Use the [docker_compose.yml](docker_compose.yml) to start and setup your InfluxDB and Grafana environments.
-- Launch the environment with, for example, 'docker compose docker_compose.yml up -d"
+- Launch the environment with, for example, 'docker compose -f docker_compose.yml up -d"
 
 ### Setup InfluxDB
 
@@ -33,7 +33,7 @@
 - Create a virtual environment with 'python3 -m venv test_env'
 - Activate the environment with 'source test_env/bin/activate'
 - Install the required package with 'pip install -r requirements.txt'
-- Setup the infrastructure. Currently the setup used Grafana and InfluxDB, which are running in separate Docker environments.
+- Setup the infrastructure, currently the setup uses Grafana and InfluxDB, which are running in separate Docker environments.
 - Execute in the terminal with the following command: 'python3 fronius.py'
 - After script execution the data is fetched from the inverter and processed. In the terminal you will see a trimmed output and if everything is setup correctly you can find the same information from InfluxDB.
 - If you don't wish to keep the virtual environment then deactivate it with 'deactivate' command in the terminal.
@@ -53,12 +53,11 @@ There's also a possibility to use a example response message in a Docker environ
   started up. For example: `http://localhost:8080/GetPowerFlowRealtimeData.fcgi`.
 
 ## Development
-Development activities happen mainly in the [development](https://github.com/mdrocan/Fronius-stats/tree/development) branch when there's something ongoing.
-The idea is to keep that branch active and also as a latest ~working solution.
+Development activities happen in development branches. Once the feature/fix/something is ready the change(s) are merged into main branch.
 
 ## Next steps
 
-- Improve documentation
+- Improve the documentation
 - Use created sample visualizations in premade config
-- Create sample config for default bucket
-- Improve the script
+- Create more sample configs
+- Further improvements to the the script
