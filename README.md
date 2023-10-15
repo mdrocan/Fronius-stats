@@ -42,7 +42,7 @@ python3 -m venv test_env
 source test_env/bin/activate
 ```
 
-- Install the required package
+- Install the required packages
 
 ```code
 pip install -r requirements.txt
