@@ -93,4 +93,4 @@ Development activities happen in development branches. Once the feature/fix/some
 - Improve the documentation
 - Use created sample visualizations in premade config
 - Create more sample configs
-- Further improvements to the the script
+- Further improvements to the the script by using also other Fronius API endpoints
