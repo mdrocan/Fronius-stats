@@ -25,6 +25,7 @@
 - You should have now a working connection to your InfluxDB and can start making visualizations.
 
 ### Configuration settings
+
 - By default the script uses a config file 'config.json', a template is [here](config.json.template).
 - Update config.json file with the relevant information from InfluxDB setup, ie. token, org and bucket.
 
@@ -64,9 +65,30 @@ Currently producing: 75 W
 Setup utilization: 2 %
 ```
 
+or
+
+```code
+Time: 19:22:36
+Not producing.
+```
+
+- You can also output the terminal output to a log file, for example:
+
+```code
+python3 fronius.py > fronius.log
+```
+
+and get a log file like this:
+
+```code
+Time: 19:20:00
+Not producing.
+```
+
 - After script execution the data is fetched from the inverter and processed. In the terminal you will see a trimmed output and if everything is setup correctly you can find the same information from InfluxDB.
 
 - If you don't wish to keep the virtual environment then deactivate it with the following command:
+
 ```code
 deactivate
 ```
@@ -86,7 +108,9 @@ There's also a possibility to use a example response message in a Docker environ
   started up. For example: `http://localhost:8080/GetPowerFlowRealtimeData.fcgi`.
 
 ## Development
-Development activities happen in development branches. Once the feature/fix/something is ready the change(s) are merged into main branch.
+
+Development activities happen in development branches.
+Once the feature/fix/something is ready the change(s) are merged into main branch.
 
 ## Next steps
 
