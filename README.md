@@ -7,7 +7,7 @@
 
 ## Configure environment
 
-- Use the [docker_compose.yml](docker_compose.yml) to start and setup your InfluxDB and Grafana environments.
+- Use the [docker_compose.yml](docker_compose.yml) to start and setup your [InfluxDB](https://www.influxdata.com/products/influxdb/) and [Grafana](https://grafana.com/oss/grafana/) environments.
 - Launch the environment with, for example, `docker compose -f docker_compose.yml up -d`
 
 ### Setup InfluxDB
