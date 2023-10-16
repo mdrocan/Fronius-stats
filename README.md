@@ -78,7 +78,7 @@ Not producing.
 python3 fronius.py > fronius.log
 ```
 
-and get a log file like this:
+and get to the log file something like this:
 
 ```code
 Time: 19:20:00
